@@ -1,0 +1,15 @@
+{
+  "id": "74o:HLc@{~!!j~{{cwG*",
+  "mode": "list",
+  "opcode": "data_listcontents",
+  "params": {
+    "LIST": "Failed Tests"
+  },
+  "spriteName": null,
+  "value": [],
+  "width": 0,
+  "height": 0,
+  "x": 5,
+  "y": 5,
+  "visible": true
+}
