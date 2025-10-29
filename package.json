@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@turbowarp/scratch-vm": "https://github.com/TurboWarp/scratch-vm",
+    "scratch-vm": "^5.0.300"
+  }
+}
