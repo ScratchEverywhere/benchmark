@@ -1,9 +1,9 @@
 {
-  "id": "74o:HLc@{~!!j~{{cwG*",
+  "id": "Pk,+-Ul?.a.,`I9c-E.u",
   "mode": "list",
   "opcode": "data_listcontents",
   "params": {
-    "LIST": "Failed Tests"
+    "LIST": "Output"
   },
   "spriteName": null,
   "value": [],
@@ -11,5 +11,5 @@
   "height": 360,
   "x": 0,
   "y": 0,
-  "visible": false
+  "visible": true
 }
