@@ -227,13 +227,17 @@
       [
         "[PASSED] Infinity/NaN Comparisons: 11/11 (100%)"
       ]
+    ],
+    "8eARG@*nof0,Q.FY0$(3": [
+      "test list",
+      []
     ]
   },
   "broadcasts": {},
   "blocks": {
-    "`": {
+    "ah": {
       "opcode": "event_whenflagclicked",
-      "next": "K",
+      "next": "P",
       "parent": null,
       "inputs": {},
       "fields": {},
@@ -242,292 +246,38 @@
       "x": 48,
       "y": 64
     },
-    "K": {
-      "opcode": "data_addtolist",
-      "next": "L",
-      "parent": "`",
-      "inputs": {
-        "ITEM": [
-          1,
-          [
-            10,
-            "0"
-          ]
-        ]
-      },
-      "fields": {
-        "LIST": [
-          "Group Tests",
-          "v[CA4i,bsu#JabrQ)Rua"
-        ]
-      },
-      "shadow": false,
-      "topLevel": false
-    },
-    "L": {
-      "opcode": "data_addtolist",
-      "next": "M",
-      "parent": "K",
-      "inputs": {
-        "ITEM": [
-          1,
-          [
-            10,
-            "0"
-          ]
-        ]
-      },
-      "fields": {
-        "LIST": [
-          "Group Passed Tests",
-          "z+LQP.Ty{C}r}}Y9i]Q0"
-        ]
-      },
-      "shadow": false,
-      "topLevel": false
-    },
-    "N": {
-      "opcode": "procedures_definition",
-      "next": "d",
-      "parent": null,
-      "inputs": {
-        "custom_block": [
-          1,
-          "e"
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": true,
-      "x": 660,
-      "y": 64
-    },
-    "e": {
-      "opcode": "procedures_prototype",
-      "next": null,
-      "parent": "N",
-      "inputs": {
-        "^+xci+5@.uFUj?f6x|Z-": [
-          1,
-          "{"
-        ],
-        "4*P_shMA#~o9AL-TbBSD": [
-          1,
-          "|"
-        ]
-      },
-      "fields": {},
-      "shadow": true,
-      "topLevel": false,
-      "mutation": {
-        "tagName": "mutation",
-        "children": [],
-        "proccode": "Run Test %s Expected %s",
-        "argumentids": "[\"^+xci+5@.uFUj?f6x|Z-\",\"4*P_shMA#~o9AL-TbBSD\"]",
-        "argumentnames": "[\"Test\",\"Expected\"]",
-        "argumentdefaults": "[\"false\",\"false\",\"\",\"\",\"\",\"\"]",
-        "warp": "true"
-      }
-    },
-    "{": {
-      "opcode": "argument_reporter_string_number",
-      "next": null,
-      "parent": "e",
-      "inputs": {},
-      "fields": {
-        "VALUE": [
-          "Test",
-          null
-        ]
-      },
-      "shadow": true,
-      "topLevel": false
-    },
-    "|": {
-      "opcode": "argument_reporter_string_number",
-      "next": null,
-      "parent": "e",
-      "inputs": {},
-      "fields": {
-        "VALUE": [
-          "Expected",
-          null
-        ]
-      },
-      "shadow": true,
-      "topLevel": false
-    },
-    "d": {
-      "opcode": "data_replaceitemoflist",
-      "next": "b",
-      "parent": "N",
-      "inputs": {
-        "INDEX": [
-          1,
-          [
-            7,
-            "last"
-          ]
-        ],
-        "ITEM": [
-          3,
-          "O",
-          [
-            10,
-            "thing"
-          ]
-        ]
-      },
-      "fields": {
-        "LIST": [
-          "Group Tests",
-          "v[CA4i,bsu#JabrQ)Rua"
-        ]
-      },
-      "shadow": false,
-      "topLevel": false
-    },
-    "O": {
-      "opcode": "operator_add",
-      "next": null,
-      "parent": "d",
-      "inputs": {
-        "NUM1": [
-          3,
-          "}",
-          [
-            4,
-            ""
-          ]
-        ],
-        "NUM2": [
-          1,
-          [
-            4,
-            "1"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "}": {
-      "opcode": "data_itemoflist",
-      "next": null,
-      "parent": "O",
-      "inputs": {
-        "INDEX": [
-          1,
-          [
-            7,
-            "last"
-          ]
-        ]
-      },
-      "fields": {
-        "LIST": [
-          "Group Tests",
-          "v[CA4i,bsu#JabrQ)Rua"
-        ]
-      },
-      "shadow": false,
-      "topLevel": false
-    },
-    "b": {
-      "opcode": "control_if_else",
-      "next": null,
-      "parent": "d",
-      "inputs": {
-        "CONDITION": [
-          2,
-          "f"
-        ],
-        "SUBSTACK": [
-          2,
-          "P"
-        ],
-        "SUBSTACK2": [
-          2,
-          "Q"
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "f": {
-      "opcode": "operator_equals",
-      "next": null,
-      "parent": "b",
-      "inputs": {
-        "OPERAND1": [
-          3,
-          "~",
-          [
-            10,
-            ""
-          ]
-        ],
-        "OPERAND2": [
-          3,
-          "aa",
-          [
-            10,
-            "50"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "~": {
-      "opcode": "argument_reporter_string_number",
-      "next": null,
-      "parent": "f",
-      "inputs": {},
-      "fields": {
-        "VALUE": [
-          "Test",
-          null
-        ]
-      },
-      "shadow": false,
-      "topLevel": false
-    },
-    "aa": {
-      "opcode": "argument_reporter_string_number",
-      "next": null,
-      "parent": "f",
-      "inputs": {},
-      "fields": {
-        "VALUE": [
-          "Expected",
-          null
-        ]
-      },
-      "shadow": false,
-      "topLevel": false
-    },
     "P": {
-      "opcode": "data_replaceitemoflist",
-      "next": null,
-      "parent": "b",
+      "opcode": "data_addtolist",
+      "next": "Q",
+      "parent": "ah",
       "inputs": {
-        "INDEX": [
+        "ITEM": [
           1,
           [
-            7,
-            "last"
+            10,
+            "0"
           ]
-        ],
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Group Tests",
+          "v[CA4i,bsu#JabrQ)Rua"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "Q": {
+      "opcode": "data_addtolist",
+      "next": "R",
+      "parent": "P",
+      "inputs": {
         "ITEM": [
-          3,
-          "R",
+          1,
           [
             10,
-            "thing"
+            "0"
           ]
         ]
       },
@@ -541,1220 +291,23 @@
       "topLevel": false
     },
     "R": {
-      "opcode": "operator_add",
-      "next": null,
-      "parent": "P",
-      "inputs": {
-        "NUM1": [
-          3,
-          "ab",
-          [
-            4,
-            ""
-          ]
-        ],
-        "NUM2": [
-          1,
-          [
-            4,
-            "1"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "ab": {
-      "opcode": "data_itemoflist",
-      "next": null,
-      "parent": "R",
-      "inputs": {
-        "INDEX": [
-          1,
-          [
-            7,
-            "last"
-          ]
-        ]
-      },
+      "opcode": "data_deletealloflist",
+      "next": "S",
+      "parent": "Q",
+      "inputs": {},
       "fields": {
         "LIST": [
-          "Group Passed Tests",
-          "z+LQP.Ty{C}r}}Y9i]Q0"
+          "Failed Tests",
+          "74o:HLc@{~!!j~{{cwG*"
         ]
       },
       "shadow": false,
       "topLevel": false
     },
     "S": {
-      "opcode": "procedures_definition",
-      "next": "a",
-      "parent": null,
-      "inputs": {
-        "custom_block": [
-          1,
-          "T"
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": true,
-      "x": 1588,
-      "y": 304
-    },
-    "T": {
-      "opcode": "procedures_prototype",
-      "next": null,
-      "parent": "S",
-      "inputs": {
-        "HxO`kCFKxYf,Adx=7hSQ": [
-          1,
-          "ac"
-        ]
-      },
-      "fields": {},
-      "shadow": true,
-      "topLevel": false,
-      "mutation": {
-        "tagName": "mutation",
-        "children": [],
-        "proccode": "Log Group Results Name %s",
-        "argumentids": "[\"HxO`kCFKxYf,Adx=7hSQ\"]",
-        "argumentnames": "[\"Name\"]",
-        "argumentdefaults": "[\"\"]",
-        "warp": "true"
-      }
-    },
-    "ac": {
-      "opcode": "argument_reporter_string_number",
-      "next": null,
-      "parent": "T",
-      "inputs": {},
-      "fields": {
-        "VALUE": [
-          "Name",
-          null
-        ]
-      },
-      "shadow": true,
-      "topLevel": false
-    },
-    "a": {
-      "opcode": "control_if_else",
-      "next": "U",
-      "parent": "S",
-      "inputs": {
-        "CONDITION": [
-          2,
-          "g"
-        ],
-        "SUBSTACK": [
-          2,
-          "V"
-        ],
-        "SUBSTACK2": [
-          2,
-          "h"
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "g": {
-      "opcode": "operator_equals",
-      "next": null,
-      "parent": "a",
-      "inputs": {
-        "OPERAND1": [
-          3,
-          "ad",
-          [
-            10,
-            ""
-          ]
-        ],
-        "OPERAND2": [
-          3,
-          "ae",
-          [
-            10,
-            "0"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "ad": {
-      "opcode": "data_itemoflist",
-      "next": null,
-      "parent": "g",
-      "inputs": {
-        "INDEX": [
-          1,
-          [
-            7,
-            "last"
-          ]
-        ]
-      },
-      "fields": {
-        "LIST": [
-          "Group Passed Tests",
-          "z+LQP.Ty{C}r}}Y9i]Q0"
-        ]
-      },
-      "shadow": false,
-      "topLevel": false
-    },
-    "ae": {
-      "opcode": "data_itemoflist",
-      "next": null,
-      "parent": "g",
-      "inputs": {
-        "INDEX": [
-          1,
-          [
-            7,
-            "last"
-          ]
-        ]
-      },
-      "fields": {
-        "LIST": [
-          "Group Tests",
-          "v[CA4i,bsu#JabrQ)Rua"
-        ]
-      },
-      "shadow": false,
-      "topLevel": false
-    },
-    "W": {
-      "opcode": "operator_join",
-      "next": null,
-      "parent": "V",
-      "inputs": {
-        "STRING1": [
-          1,
-          [
-            10,
-            "[PASSED] "
-          ]
-        ],
-        "STRING2": [
-          3,
-          "i",
-          [
-            10,
-            "banana"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "i": {
-      "opcode": "operator_join",
-      "next": null,
-      "parent": "W",
-      "inputs": {
-        "STRING1": [
-          3,
-          "af",
-          [
-            10,
-            "apple "
-          ]
-        ],
-        "STRING2": [
-          3,
-          "X",
-          [
-            10,
-            ": "
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "af": {
-      "opcode": "argument_reporter_string_number",
-      "next": null,
-      "parent": "i",
-      "inputs": {},
-      "fields": {
-        "VALUE": [
-          "Name",
-          null
-        ]
-      },
-      "shadow": false,
-      "topLevel": false
-    },
-    "X": {
-      "opcode": "operator_join",
-      "next": null,
-      "parent": "i",
-      "inputs": {
-        "STRING1": [
-          1,
-          [
-            10,
-            ": "
-          ]
-        ],
-        "STRING2": [
-          3,
-          "j",
-          [
-            10,
-            "banana"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "j": {
-      "opcode": "operator_join",
-      "next": null,
-      "parent": "X",
-      "inputs": {
-        "STRING1": [
-          3,
-          "ag",
-          [
-            10,
-            "apple "
-          ]
-        ],
-        "STRING2": [
-          3,
-          "Y",
-          [
-            10,
-            ""
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "ag": {
-      "opcode": "data_itemoflist",
-      "next": null,
-      "parent": "j",
-      "inputs": {
-        "INDEX": [
-          1,
-          [
-            7,
-            "last"
-          ]
-        ]
-      },
-      "fields": {
-        "LIST": [
-          "Group Passed Tests",
-          "z+LQP.Ty{C}r}}Y9i]Q0"
-        ]
-      },
-      "shadow": false,
-      "topLevel": false
-    },
-    "Y": {
-      "opcode": "operator_join",
-      "next": null,
-      "parent": "j",
-      "inputs": {
-        "STRING1": [
-          1,
-          [
-            10,
-            "/"
-          ]
-        ],
-        "STRING2": [
-          3,
-          "Z",
-          [
-            10,
-            "banana"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "Z": {
-      "opcode": "operator_join",
-      "next": null,
-      "parent": "Y",
-      "inputs": {
-        "STRING1": [
-          3,
-          "ah",
-          [
-            10,
-            "apple "
-          ]
-        ],
-        "STRING2": [
-          1,
-          [
-            10,
-            " (100%)"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "ah": {
-      "opcode": "data_itemoflist",
-      "next": null,
-      "parent": "Z",
-      "inputs": {
-        "INDEX": [
-          1,
-          [
-            7,
-            "last"
-          ]
-        ]
-      },
-      "fields": {
-        "LIST": [
-          "Group Tests",
-          "v[CA4i,bsu#JabrQ)Rua"
-        ]
-      },
-      "shadow": false,
-      "topLevel": false
-    },
-    "!": {
-      "opcode": "operator_join",
-      "next": null,
-      "parent": "h",
-      "inputs": {
-        "STRING1": [
-          1,
-          [
-            10,
-            "[FAILED] "
-          ]
-        ],
-        "STRING2": [
-          3,
-          "k",
-          [
-            10,
-            "banana"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "k": {
-      "opcode": "operator_join",
-      "next": null,
-      "parent": "!",
-      "inputs": {
-        "STRING1": [
-          3,
-          "ai",
-          [
-            10,
-            "apple "
-          ]
-        ],
-        "STRING2": [
-          3,
-          "#",
-          [
-            10,
-            ": "
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "ai": {
-      "opcode": "argument_reporter_string_number",
-      "next": null,
-      "parent": "k",
-      "inputs": {},
-      "fields": {
-        "VALUE": [
-          "Name",
-          null
-        ]
-      },
-      "shadow": false,
-      "topLevel": false
-    },
-    "#": {
-      "opcode": "operator_join",
-      "next": null,
-      "parent": "k",
-      "inputs": {
-        "STRING1": [
-          1,
-          [
-            10,
-            ": "
-          ]
-        ],
-        "STRING2": [
-          3,
-          "l",
-          [
-            10,
-            "banana"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "l": {
-      "opcode": "operator_join",
-      "next": null,
-      "parent": "#",
-      "inputs": {
-        "STRING1": [
-          3,
-          "aj",
-          [
-            10,
-            "apple "
-          ]
-        ],
-        "STRING2": [
-          3,
-          "%",
-          [
-            10,
-            ""
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "aj": {
-      "opcode": "data_itemoflist",
-      "next": null,
-      "parent": "l",
-      "inputs": {
-        "INDEX": [
-          1,
-          [
-            7,
-            "last"
-          ]
-        ]
-      },
-      "fields": {
-        "LIST": [
-          "Group Passed Tests",
-          "z+LQP.Ty{C}r}}Y9i]Q0"
-        ]
-      },
-      "shadow": false,
-      "topLevel": false
-    },
-    "%": {
-      "opcode": "operator_join",
-      "next": null,
-      "parent": "l",
-      "inputs": {
-        "STRING1": [
-          1,
-          [
-            10,
-            "/"
-          ]
-        ],
-        "STRING2": [
-          3,
-          "(",
-          [
-            10,
-            "banana"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "(": {
-      "opcode": "operator_join",
-      "next": null,
-      "parent": "%",
-      "inputs": {
-        "STRING1": [
-          3,
-          "ak",
-          [
-            10,
-            "apple "
-          ]
-        ],
-        "STRING2": [
-          1,
-          [
-            10,
-            " (100%)"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "ak": {
-      "opcode": "data_itemoflist",
-      "next": null,
-      "parent": "(",
-      "inputs": {
-        "INDEX": [
-          1,
-          [
-            7,
-            "last"
-          ]
-        ]
-      },
-      "fields": {
-        "LIST": [
-          "Group Tests",
-          "v[CA4i,bsu#JabrQ)Rua"
-        ]
-      },
-      "shadow": false,
-      "topLevel": false
-    },
-    ")": {
-      "opcode": "data_setvariableto",
-      "next": "m",
-      "parent": "h",
-      "inputs": {
-        "VALUE": [
-          1,
-          [
-            10,
-            "0"
-          ]
-        ]
-      },
-      "fields": {
-        "VARIABLE": [
-          "i",
-          "2RQc9XLi-rcDg!k@r;OR"
-        ]
-      },
-      "shadow": false,
-      "topLevel": false
-    },
-    "m": {
-      "opcode": "control_repeat",
-      "next": null,
-      "parent": ")",
-      "inputs": {
-        "TIMES": [
-          3,
-          "al",
-          [
-            6,
-            "10"
-          ]
-        ],
-        "SUBSTACK": [
-          2,
-          "*"
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "al": {
-      "opcode": "data_lengthoflist",
-      "next": null,
-      "parent": "m",
-      "inputs": {},
-      "fields": {
-        "LIST": [
-          "Failed Tests",
-          "74o:HLc@{~!!j~{{cwG*"
-        ]
-      },
-      "shadow": false,
-      "topLevel": false
-    },
-    "*": {
-      "opcode": "data_changevariableby",
-      "next": "c",
-      "parent": "m",
-      "inputs": {
-        "VALUE": [
-          1,
-          [
-            4,
-            "1"
-          ]
-        ]
-      },
-      "fields": {
-        "VARIABLE": [
-          "i",
-          "2RQc9XLi-rcDg!k@r;OR"
-        ]
-      },
-      "shadow": false,
-      "topLevel": false
-    },
-    "c": {
-      "opcode": "control_if_else",
-      "next": null,
-      "parent": "*",
-      "inputs": {
-        "CONDITION": [
-          2,
-          "+"
-        ],
-        "SUBSTACK": [
-          2,
-          ","
-        ],
-        "SUBSTACK2": [
-          2,
-          "-"
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "+": {
-      "opcode": "operator_equals",
-      "next": null,
-      "parent": "c",
-      "inputs": {
-        "OPERAND1": [
-          3,
-          [
-            12,
-            "i",
-            "2RQc9XLi-rcDg!k@r;OR"
-          ],
-          [
-            10,
-            ""
-          ]
-        ],
-        "OPERAND2": [
-          3,
-          "am",
-          [
-            10,
-            "50"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "am": {
-      "opcode": "data_lengthoflist",
-      "next": null,
-      "parent": "+",
-      "inputs": {},
-      "fields": {
-        "LIST": [
-          "Failed Tests",
-          "74o:HLc@{~!!j~{{cwG*"
-        ]
-      },
-      "shadow": false,
-      "topLevel": false
-    },
-    ".": {
-      "opcode": "operator_join",
-      "next": null,
-      "parent": ",",
-      "inputs": {
-        "STRING1": [
-          1,
-          [
-            10,
-            "\u2517"
-          ]
-        ],
-        "STRING2": [
-          3,
-          "/",
-          [
-            10,
-            ""
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "/": {
-      "opcode": "operator_join",
-      "next": null,
-      "parent": ".",
-      "inputs": {
-        "STRING1": [
-          1,
-          [
-            10,
-            " Test "
-          ]
-        ],
-        "STRING2": [
-          3,
-          ":",
-          [
-            10,
-            "banana"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    ":": {
-      "opcode": "operator_join",
-      "next": null,
-      "parent": "/",
-      "inputs": {
-        "STRING1": [
-          3,
-          "an",
-          [
-            10,
-            "apple "
-          ]
-        ],
-        "STRING2": [
-          1,
-          [
-            10,
-            " Failed"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "an": {
-      "opcode": "data_itemoflist",
-      "next": null,
-      "parent": ":",
-      "inputs": {
-        "INDEX": [
-          3,
-          [
-            12,
-            "i",
-            "2RQc9XLi-rcDg!k@r;OR"
-          ],
-          [
-            7,
-            "1"
-          ]
-        ]
-      },
-      "fields": {
-        "LIST": [
-          "Failed Tests",
-          "74o:HLc@{~!!j~{{cwG*"
-        ]
-      },
-      "shadow": false,
-      "topLevel": false
-    },
-    ";": {
-      "opcode": "operator_join",
-      "next": null,
-      "parent": "-",
-      "inputs": {
-        "STRING1": [
-          1,
-          [
-            10,
-            "\u2523"
-          ]
-        ],
-        "STRING2": [
-          3,
-          "=",
-          [
-            10,
-            ""
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "=": {
-      "opcode": "operator_join",
-      "next": null,
-      "parent": ";",
-      "inputs": {
-        "STRING1": [
-          1,
-          [
-            10,
-            " Test "
-          ]
-        ],
-        "STRING2": [
-          3,
-          "?",
-          [
-            10,
-            "banana"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "U": {
-      "opcode": "data_addtolist",
-      "next": "@",
-      "parent": "a",
-      "inputs": {
-        "ITEM": [
-          1,
-          [
-            10,
-            "0"
-          ]
-        ]
-      },
-      "fields": {
-        "LIST": [
-          "Group Tests",
-          "v[CA4i,bsu#JabrQ)Rua"
-        ]
-      },
-      "shadow": false,
-      "topLevel": false
-    },
-    "@": {
-      "opcode": "data_addtolist",
-      "next": "ao",
-      "parent": "U",
-      "inputs": {
-        "ITEM": [
-          1,
-          [
-            10,
-            "0"
-          ]
-        ]
-      },
-      "fields": {
-        "LIST": [
-          "Group Passed Tests",
-          "z+LQP.Ty{C}r}}Y9i]Q0"
-        ]
-      },
-      "shadow": false,
-      "topLevel": false
-    },
-    "ao": {
       "opcode": "data_deletealloflist",
-      "next": null,
-      "parent": "@",
-      "inputs": {},
-      "fields": {
-        "LIST": [
-          "Failed Tests",
-          "74o:HLc@{~!!j~{{cwG*"
-        ]
-      },
-      "shadow": false,
-      "topLevel": false
-    },
-    "[": {
-      "opcode": "procedures_definition",
-      "next": "n",
-      "parent": null,
-      "inputs": {
-        "custom_block": [
-          1,
-          "]"
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": true,
-      "x": 1588,
-      "y": 64
-    },
-    "]": {
-      "opcode": "procedures_prototype",
-      "next": null,
-      "parent": "[",
-      "inputs": {
-        "AQW?#4(Khe~DUGD=!vlE": [
-          1,
-          "ap"
-        ]
-      },
-      "fields": {},
-      "shadow": true,
-      "topLevel": false,
-      "mutation": {
-        "tagName": "mutation",
-        "children": [],
-        "proccode": "Log %s",
-        "argumentids": "[\"AQW?#4(Khe~DUGD=!vlE\"]",
-        "argumentnames": "[\"Info\"]",
-        "argumentdefaults": "[\"\",\"\"]",
-        "warp": "true"
-      }
-    },
-    "ap": {
-      "opcode": "argument_reporter_string_number",
-      "next": null,
-      "parent": "]",
-      "inputs": {},
-      "fields": {
-        "VALUE": [
-          "Info",
-          null
-        ]
-      },
-      "shadow": true,
-      "topLevel": false
-    },
-    "n": {
-      "opcode": "procedures_call",
-      "next": "^",
-      "parent": "[",
-      "inputs": {
-        "arg0": [
-          3,
-          "aq",
-          [
-            10,
-            ""
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false,
-      "mutation": {
-        "tagName": "mutation",
-        "children": [],
-        "proccode": "\u200b\u200blog\u200b\u200b %s",
-        "argumentids": "[\"arg0\"]",
-        "warp": "false"
-      }
-    },
-    "aq": {
-      "opcode": "argument_reporter_string_number",
-      "next": null,
-      "parent": "n",
-      "inputs": {},
-      "fields": {
-        "VALUE": [
-          "Info",
-          null
-        ]
-      },
-      "shadow": false,
-      "topLevel": false
-    },
-    "ar": {
-      "opcode": "argument_reporter_string_number",
-      "next": null,
-      "parent": "^",
-      "inputs": {},
-      "fields": {
-        "VALUE": [
-          "Info",
-          null
-        ]
-      },
-      "shadow": false,
-      "topLevel": false
-    },
-    "V": {
-      "opcode": "procedures_call",
-      "next": null,
-      "parent": "a",
-      "inputs": {
-        "AQW?#4(Khe~DUGD=!vlE": [
-          3,
-          "W",
-          [
-            10,
-            ""
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false,
-      "mutation": {
-        "tagName": "mutation",
-        "children": [],
-        "proccode": "Log %s",
-        "argumentids": "[\"AQW?#4(Khe~DUGD=!vlE\"]",
-        "warp": "true"
-      }
-    },
-    "h": {
-      "opcode": "procedures_call",
-      "next": ")",
-      "parent": "a",
-      "inputs": {
-        "AQW?#4(Khe~DUGD=!vlE": [
-          3,
-          "!",
-          [
-            10,
-            ""
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false,
-      "mutation": {
-        "tagName": "mutation",
-        "children": [],
-        "proccode": "Log %s",
-        "argumentids": "[\"AQW?#4(Khe~DUGD=!vlE\"]",
-        "warp": "true"
-      }
-    },
-    ",": {
-      "opcode": "procedures_call",
-      "next": null,
-      "parent": "c",
-      "inputs": {
-        "AQW?#4(Khe~DUGD=!vlE": [
-          3,
-          ".",
-          [
-            10,
-            ""
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false,
-      "mutation": {
-        "tagName": "mutation",
-        "children": [],
-        "proccode": "Log %s",
-        "argumentids": "[\"AQW?#4(Khe~DUGD=!vlE\"]",
-        "warp": "true"
-      }
-    },
-    "-": {
-      "opcode": "procedures_call",
-      "next": null,
-      "parent": "c",
-      "inputs": {
-        "AQW?#4(Khe~DUGD=!vlE": [
-          3,
-          ";",
-          [
-            10,
-            ""
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false,
-      "mutation": {
-        "tagName": "mutation",
-        "children": [],
-        "proccode": "Log %s",
-        "argumentids": "[\"AQW?#4(Khe~DUGD=!vlE\"]",
-        "warp": "true"
-      }
-    },
-    "^": {
-      "opcode": "data_addtolist",
-      "next": null,
-      "parent": "n",
-      "inputs": {
-        "ITEM": [
-          3,
-          "ar",
-          [
-            10,
-            "thing"
-          ]
-        ]
-      },
-      "fields": {
-        "LIST": [
-          "Output",
-          "Pk,+-Ul?.a.,`I9c-E.u"
-        ]
-      },
-      "shadow": false,
-      "topLevel": false
-    },
-    "M": {
-      "opcode": "data_deletealloflist",
-      "next": "_",
-      "parent": "L",
-      "inputs": {},
-      "fields": {
-        "LIST": [
-          "Failed Tests",
-          "74o:HLc@{~!!j~{{cwG*"
-        ]
-      },
-      "shadow": false,
-      "topLevel": false
-    },
-    "_": {
-      "opcode": "data_deletealloflist",
-      "next": "o",
-      "parent": "M",
+      "next": "f",
+      "parent": "R",
       "inputs": {},
       "fields": {
         "LIST": [
@@ -1765,14 +318,14 @@
       "shadow": false,
       "topLevel": false
     },
-    "o": {
+    "f": {
       "opcode": "procedures_call",
-      "next": "p",
-      "parent": "_",
+      "next": "g",
+      "parent": "S",
       "inputs": {
         "^+xci+5@.uFUj?f6x|Z-": [
           3,
-          "q",
+          "h",
           [
             10,
             ""
@@ -1797,8 +350,538 @@
         "warp": "true"
       }
     },
-    "q": {
+    "h": {
       "opcode": "operator_equals",
+      "next": null,
+      "parent": "f",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "ai",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          3,
+          "aj",
+          [
+            10,
+            "50"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ai": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": "h",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aj": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": "h",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "g": {
+      "opcode": "procedures_call",
+      "next": "i",
+      "parent": "f",
+      "inputs": {
+        "^+xci+5@.uFUj?f6x|Z-": [
+          3,
+          "j",
+          [
+            10,
+            ""
+          ]
+        ],
+        "4*P_shMA#~o9AL-TbBSD": [
+          1,
+          [
+            10,
+            "false"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Run Test %s Expected %s",
+        "argumentids": "[\"^+xci+5@.uFUj?f6x|Z-\",\"4*P_shMA#~o9AL-TbBSD\"]",
+        "warp": "true"
+      }
+    },
+    "j": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "g",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "ak",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          3,
+          "al",
+          [
+            10,
+            "50"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ak": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": "j",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "al": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": "j",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "i": {
+      "opcode": "procedures_call",
+      "next": "k",
+      "parent": "g",
+      "inputs": {
+        "^+xci+5@.uFUj?f6x|Z-": [
+          3,
+          "l",
+          [
+            10,
+            ""
+          ]
+        ],
+        "4*P_shMA#~o9AL-TbBSD": [
+          1,
+          [
+            10,
+            "true"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Run Test %s Expected %s",
+        "argumentids": "[\"^+xci+5@.uFUj?f6x|Z-\",\"4*P_shMA#~o9AL-TbBSD\"]",
+        "warp": "true"
+      }
+    },
+    "l": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "i",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "am",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          3,
+          "an",
+          [
+            10,
+            "50"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "am": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": "l",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "an": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": "l",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "k": {
+      "opcode": "procedures_call",
+      "next": "m",
+      "parent": "i",
+      "inputs": {
+        "^+xci+5@.uFUj?f6x|Z-": [
+          3,
+          "n",
+          [
+            10,
+            ""
+          ]
+        ],
+        "4*P_shMA#~o9AL-TbBSD": [
+          1,
+          [
+            10,
+            "false"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Run Test %s Expected %s",
+        "argumentids": "[\"^+xci+5@.uFUj?f6x|Z-\",\"4*P_shMA#~o9AL-TbBSD\"]",
+        "warp": "true"
+      }
+    },
+    "n": {
+      "opcode": "operator_gt",
+      "next": null,
+      "parent": "k",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "ao",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          3,
+          "ap",
+          [
+            10,
+            "50"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ao": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": "n",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ap": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": "n",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "m": {
+      "opcode": "procedures_call",
+      "next": "o",
+      "parent": "k",
+      "inputs": {
+        "^+xci+5@.uFUj?f6x|Z-": [
+          3,
+          "p",
+          [
+            10,
+            ""
+          ]
+        ],
+        "4*P_shMA#~o9AL-TbBSD": [
+          1,
+          [
+            10,
+            "false"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Run Test %s Expected %s",
+        "argumentids": "[\"^+xci+5@.uFUj?f6x|Z-\",\"4*P_shMA#~o9AL-TbBSD\"]",
+        "warp": "true"
+      }
+    },
+    "p": {
+      "opcode": "operator_lt",
+      "next": null,
+      "parent": "m",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "aq",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          3,
+          "ar",
+          [
+            10,
+            "50"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aq": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": "p",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ar": {
+      "opcode": "operator_divide",
+      "next": null,
+      "parent": "p",
+      "inputs": {
+        "NUM1": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "o": {
+      "opcode": "procedures_call",
+      "next": "q",
+      "parent": "m",
+      "inputs": {
+        "^+xci+5@.uFUj?f6x|Z-": [
+          3,
+          "r",
+          [
+            10,
+            ""
+          ]
+        ],
+        "4*P_shMA#~o9AL-TbBSD": [
+          1,
+          [
+            10,
+            "false"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Run Test %s Expected %s",
+        "argumentids": "[\"^+xci+5@.uFUj?f6x|Z-\",\"4*P_shMA#~o9AL-TbBSD\"]",
+        "warp": "true"
+      }
+    },
+    "r": {
+      "opcode": "operator_gt",
       "next": null,
       "parent": "o",
       "inputs": {
@@ -1826,7 +909,7 @@
     "as": {
       "opcode": "operator_divide",
       "next": null,
-      "parent": "q",
+      "parent": "r",
       "inputs": {
         "NUM1": [
           1,
@@ -1850,7 +933,7 @@
     "at": {
       "opcode": "operator_divide",
       "next": null,
-      "parent": "q",
+      "parent": "r",
       "inputs": {
         "NUM1": [
           1,
@@ -1871,14 +954,14 @@
       "shadow": false,
       "topLevel": false
     },
-    "p": {
+    "q": {
       "opcode": "procedures_call",
-      "next": "r",
+      "next": "s",
       "parent": "o",
       "inputs": {
         "^+xci+5@.uFUj?f6x|Z-": [
           3,
-          "s",
+          "t",
           [
             10,
             ""
@@ -1903,10 +986,10 @@
         "warp": "true"
       }
     },
-    "s": {
-      "opcode": "operator_equals",
+    "t": {
+      "opcode": "operator_lt",
       "next": null,
-      "parent": "p",
+      "parent": "q",
       "inputs": {
         "OPERAND1": [
           3,
@@ -1932,13 +1015,13 @@
     "au": {
       "opcode": "operator_divide",
       "next": null,
-      "parent": "s",
+      "parent": "t",
       "inputs": {
         "NUM1": [
           1,
           [
             4,
-            "1"
+            "0"
           ]
         ],
         "NUM2": [
@@ -1956,7 +1039,7 @@
     "av": {
       "opcode": "operator_divide",
       "next": null,
-      "parent": "s",
+      "parent": "t",
       "inputs": {
         "NUM1": [
           1,
@@ -1977,14 +1060,14 @@
       "shadow": false,
       "topLevel": false
     },
-    "r": {
+    "s": {
       "opcode": "procedures_call",
-      "next": "t",
-      "parent": "p",
+      "next": "u",
+      "parent": "q",
       "inputs": {
         "^+xci+5@.uFUj?f6x|Z-": [
           3,
-          "u",
+          "v",
           [
             10,
             ""
@@ -1994,7 +1077,7 @@
           1,
           [
             10,
-            "true"
+            "false"
           ]
         ]
       },
@@ -2009,10 +1092,10 @@
         "warp": "true"
       }
     },
-    "u": {
-      "opcode": "operator_equals",
+    "v": {
+      "opcode": "operator_lt",
       "next": null,
-      "parent": "r",
+      "parent": "s",
       "inputs": {
         "OPERAND1": [
           3,
@@ -2038,13 +1121,13 @@
     "aw": {
       "opcode": "operator_divide",
       "next": null,
-      "parent": "u",
+      "parent": "v",
       "inputs": {
         "NUM1": [
           1,
           [
             4,
-            "1"
+            "0"
           ]
         ],
         "NUM2": [
@@ -2062,7 +1145,7 @@
     "ax": {
       "opcode": "operator_divide",
       "next": null,
-      "parent": "u",
+      "parent": "v",
       "inputs": {
         "NUM1": [
           1,
@@ -2083,14 +1166,14 @@
       "shadow": false,
       "topLevel": false
     },
-    "t": {
+    "u": {
       "opcode": "procedures_call",
-      "next": "v",
-      "parent": "r",
+      "next": "w",
+      "parent": "s",
       "inputs": {
         "^+xci+5@.uFUj?f6x|Z-": [
           3,
-          "w",
+          "x",
           [
             10,
             ""
@@ -2100,7 +1183,7 @@
           1,
           [
             10,
-            "false"
+            "true"
           ]
         ]
       },
@@ -2115,10 +1198,10 @@
         "warp": "true"
       }
     },
-    "w": {
+    "x": {
       "opcode": "operator_gt",
       "next": null,
-      "parent": "t",
+      "parent": "u",
       "inputs": {
         "OPERAND1": [
           3,
@@ -2144,13 +1227,13 @@
     "ay": {
       "opcode": "operator_divide",
       "next": null,
-      "parent": "w",
+      "parent": "x",
       "inputs": {
         "NUM1": [
           1,
           [
             4,
-            "1"
+            "0"
           ]
         ],
         "NUM2": [
@@ -2168,7 +1251,7 @@
     "az": {
       "opcode": "operator_divide",
       "next": null,
-      "parent": "w",
+      "parent": "x",
       "inputs": {
         "NUM1": [
           1,
@@ -2189,14 +1272,14 @@
       "shadow": false,
       "topLevel": false
     },
-    "v": {
+    "w": {
       "opcode": "procedures_call",
-      "next": "x",
-      "parent": "t",
+      "next": "y",
+      "parent": "u",
       "inputs": {
         "^+xci+5@.uFUj?f6x|Z-": [
           3,
-          "y",
+          "z",
           [
             10,
             ""
@@ -2206,7 +1289,7 @@
           1,
           [
             10,
-            "false"
+            "true"
           ]
         ]
       },
@@ -2221,10 +1304,10 @@
         "warp": "true"
       }
     },
-    "y": {
+    "z": {
       "opcode": "operator_lt",
       "next": null,
-      "parent": "v",
+      "parent": "w",
       "inputs": {
         "OPERAND1": [
           3,
@@ -2250,7 +1333,7 @@
     "aA": {
       "opcode": "operator_divide",
       "next": null,
-      "parent": "y",
+      "parent": "z",
       "inputs": {
         "NUM1": [
           1,
@@ -2274,13 +1357,13 @@
     "aB": {
       "opcode": "operator_divide",
       "next": null,
-      "parent": "y",
+      "parent": "z",
       "inputs": {
         "NUM1": [
           1,
           [
             4,
-            "1"
+            "0"
           ]
         ],
         "NUM2": [
@@ -2295,10 +1378,10 @@
       "shadow": false,
       "topLevel": false
     },
-    "x": {
+    "y": {
       "opcode": "procedures_call",
-      "next": "z",
-      "parent": "v",
+      "next": "T",
+      "parent": "w",
       "inputs": {
         "^+xci+5@.uFUj?f6x|Z-": [
           3,
@@ -2330,7 +1413,7 @@
     "A": {
       "opcode": "operator_gt",
       "next": null,
-      "parent": "x",
+      "parent": "y",
       "inputs": {
         "OPERAND1": [
           3,
@@ -2362,7 +1445,7 @@
           1,
           [
             4,
-            "0"
+            "1"
           ]
         ],
         "NUM2": [
@@ -2401,540 +1484,10 @@
       "shadow": false,
       "topLevel": false
     },
-    "z": {
+    "T": {
       "opcode": "procedures_call",
-      "next": "B",
-      "parent": "x",
-      "inputs": {
-        "^+xci+5@.uFUj?f6x|Z-": [
-          3,
-          "C",
-          [
-            10,
-            ""
-          ]
-        ],
-        "4*P_shMA#~o9AL-TbBSD": [
-          1,
-          [
-            10,
-            "false"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false,
-      "mutation": {
-        "tagName": "mutation",
-        "children": [],
-        "proccode": "Run Test %s Expected %s",
-        "argumentids": "[\"^+xci+5@.uFUj?f6x|Z-\",\"4*P_shMA#~o9AL-TbBSD\"]",
-        "warp": "true"
-      }
-    },
-    "C": {
-      "opcode": "operator_lt",
-      "next": null,
-      "parent": "z",
-      "inputs": {
-        "OPERAND1": [
-          3,
-          "aE",
-          [
-            10,
-            ""
-          ]
-        ],
-        "OPERAND2": [
-          3,
-          "aF",
-          [
-            10,
-            "50"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "aE": {
-      "opcode": "operator_divide",
-      "next": null,
-      "parent": "C",
-      "inputs": {
-        "NUM1": [
-          1,
-          [
-            4,
-            "0"
-          ]
-        ],
-        "NUM2": [
-          1,
-          [
-            4,
-            "0"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "aF": {
-      "opcode": "operator_divide",
-      "next": null,
-      "parent": "C",
-      "inputs": {
-        "NUM1": [
-          1,
-          [
-            4,
-            "0"
-          ]
-        ],
-        "NUM2": [
-          1,
-          [
-            4,
-            "0"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "B": {
-      "opcode": "procedures_call",
-      "next": "D",
-      "parent": "z",
-      "inputs": {
-        "^+xci+5@.uFUj?f6x|Z-": [
-          3,
-          "E",
-          [
-            10,
-            ""
-          ]
-        ],
-        "4*P_shMA#~o9AL-TbBSD": [
-          1,
-          [
-            10,
-            "false"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false,
-      "mutation": {
-        "tagName": "mutation",
-        "children": [],
-        "proccode": "Run Test %s Expected %s",
-        "argumentids": "[\"^+xci+5@.uFUj?f6x|Z-\",\"4*P_shMA#~o9AL-TbBSD\"]",
-        "warp": "true"
-      }
-    },
-    "E": {
-      "opcode": "operator_lt",
-      "next": null,
-      "parent": "B",
-      "inputs": {
-        "OPERAND1": [
-          3,
-          "aG",
-          [
-            10,
-            ""
-          ]
-        ],
-        "OPERAND2": [
-          3,
-          "aH",
-          [
-            10,
-            "50"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "aG": {
-      "opcode": "operator_divide",
-      "next": null,
-      "parent": "E",
-      "inputs": {
-        "NUM1": [
-          1,
-          [
-            4,
-            "0"
-          ]
-        ],
-        "NUM2": [
-          1,
-          [
-            4,
-            "0"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "aH": {
-      "opcode": "operator_divide",
-      "next": null,
-      "parent": "E",
-      "inputs": {
-        "NUM1": [
-          1,
-          [
-            4,
-            "1"
-          ]
-        ],
-        "NUM2": [
-          1,
-          [
-            4,
-            "0"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "D": {
-      "opcode": "procedures_call",
-      "next": "F",
-      "parent": "B",
-      "inputs": {
-        "^+xci+5@.uFUj?f6x|Z-": [
-          3,
-          "G",
-          [
-            10,
-            ""
-          ]
-        ],
-        "4*P_shMA#~o9AL-TbBSD": [
-          1,
-          [
-            10,
-            "true"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false,
-      "mutation": {
-        "tagName": "mutation",
-        "children": [],
-        "proccode": "Run Test %s Expected %s",
-        "argumentids": "[\"^+xci+5@.uFUj?f6x|Z-\",\"4*P_shMA#~o9AL-TbBSD\"]",
-        "warp": "true"
-      }
-    },
-    "G": {
-      "opcode": "operator_gt",
-      "next": null,
-      "parent": "D",
-      "inputs": {
-        "OPERAND1": [
-          3,
-          "aI",
-          [
-            10,
-            ""
-          ]
-        ],
-        "OPERAND2": [
-          3,
-          "aJ",
-          [
-            10,
-            "50"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "aI": {
-      "opcode": "operator_divide",
-      "next": null,
-      "parent": "G",
-      "inputs": {
-        "NUM1": [
-          1,
-          [
-            4,
-            "0"
-          ]
-        ],
-        "NUM2": [
-          1,
-          [
-            4,
-            "0"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "aJ": {
-      "opcode": "operator_divide",
-      "next": null,
-      "parent": "G",
-      "inputs": {
-        "NUM1": [
-          1,
-          [
-            4,
-            "1"
-          ]
-        ],
-        "NUM2": [
-          1,
-          [
-            4,
-            "0"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "F": {
-      "opcode": "procedures_call",
-      "next": "H",
-      "parent": "D",
-      "inputs": {
-        "^+xci+5@.uFUj?f6x|Z-": [
-          3,
-          "I",
-          [
-            10,
-            ""
-          ]
-        ],
-        "4*P_shMA#~o9AL-TbBSD": [
-          1,
-          [
-            10,
-            "true"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false,
-      "mutation": {
-        "tagName": "mutation",
-        "children": [],
-        "proccode": "Run Test %s Expected %s",
-        "argumentids": "[\"^+xci+5@.uFUj?f6x|Z-\",\"4*P_shMA#~o9AL-TbBSD\"]",
-        "warp": "true"
-      }
-    },
-    "I": {
-      "opcode": "operator_lt",
-      "next": null,
-      "parent": "F",
-      "inputs": {
-        "OPERAND1": [
-          3,
-          "aK",
-          [
-            10,
-            ""
-          ]
-        ],
-        "OPERAND2": [
-          3,
-          "aL",
-          [
-            10,
-            "50"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "aK": {
-      "opcode": "operator_divide",
-      "next": null,
-      "parent": "I",
-      "inputs": {
-        "NUM1": [
-          1,
-          [
-            4,
-            "1"
-          ]
-        ],
-        "NUM2": [
-          1,
-          [
-            4,
-            "0"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "aL": {
-      "opcode": "operator_divide",
-      "next": null,
-      "parent": "I",
-      "inputs": {
-        "NUM1": [
-          1,
-          [
-            4,
-            "0"
-          ]
-        ],
-        "NUM2": [
-          1,
-          [
-            4,
-            "0"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "H": {
-      "opcode": "procedures_call",
-      "next": "aM",
-      "parent": "F",
-      "inputs": {
-        "^+xci+5@.uFUj?f6x|Z-": [
-          3,
-          "J",
-          [
-            10,
-            ""
-          ]
-        ],
-        "4*P_shMA#~o9AL-TbBSD": [
-          1,
-          [
-            10,
-            "false"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false,
-      "mutation": {
-        "tagName": "mutation",
-        "children": [],
-        "proccode": "Run Test %s Expected %s",
-        "argumentids": "[\"^+xci+5@.uFUj?f6x|Z-\",\"4*P_shMA#~o9AL-TbBSD\"]",
-        "warp": "true"
-      }
-    },
-    "J": {
-      "opcode": "operator_gt",
-      "next": null,
-      "parent": "H",
-      "inputs": {
-        "OPERAND1": [
-          3,
-          "aN",
-          [
-            10,
-            ""
-          ]
-        ],
-        "OPERAND2": [
-          3,
-          "aO",
-          [
-            10,
-            "50"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "aN": {
-      "opcode": "operator_divide",
-      "next": null,
-      "parent": "J",
-      "inputs": {
-        "NUM1": [
-          1,
-          [
-            4,
-            "1"
-          ]
-        ],
-        "NUM2": [
-          1,
-          [
-            4,
-            "0"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "aO": {
-      "opcode": "operator_divide",
-      "next": null,
-      "parent": "J",
-      "inputs": {
-        "NUM1": [
-          1,
-          [
-            4,
-            "0"
-          ]
-        ],
-        "NUM2": [
-          1,
-          [
-            4,
-            "0"
-          ]
-        ]
-      },
-      "fields": {},
-      "shadow": false,
-      "topLevel": false
-    },
-    "aM": {
-      "opcode": "procedures_call",
-      "next": null,
-      "parent": "H",
+      "next": "U",
+      "parent": "y",
       "inputs": {
         "HxO`kCFKxYf,Adx=7hSQ": [
           1,
@@ -2955,14 +1508,92 @@
         "warp": "true"
       }
     },
-    "Q": {
-      "opcode": "data_addtolist",
-      "next": null,
-      "parent": "b",
+    "V": {
+      "opcode": "procedures_definition",
+      "next": "B",
+      "parent": null,
       "inputs": {
+        "custom_block": [
+          1,
+          "C"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 660,
+      "y": 64
+    },
+    "C": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "V",
+      "inputs": {
+        "^+xci+5@.uFUj?f6x|Z-": [
+          1,
+          "aE"
+        ],
+        "4*P_shMA#~o9AL-TbBSD": [
+          1,
+          "aF"
+        ]
+      },
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Run Test %s Expected %s",
+        "argumentids": "[\"^+xci+5@.uFUj?f6x|Z-\",\"4*P_shMA#~o9AL-TbBSD\"]",
+        "argumentnames": "[\"Test\",\"Expected\"]",
+        "argumentdefaults": "[\"false\",\"false\",\"\",\"\",\"\",\"\"]",
+        "warp": "true"
+      }
+    },
+    "aE": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "C",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "Test",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "aF": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "C",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "Expected",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "B": {
+      "opcode": "data_replaceitemoflist",
+      "next": "b",
+      "parent": "V",
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "last"
+          ]
+        ],
         "ITEM": [
           3,
-          "aP",
+          "W",
           [
             10,
             "thing"
@@ -2971,17 +1602,42 @@
       },
       "fields": {
         "LIST": [
-          "Failed Tests",
-          "74o:HLc@{~!!j~{{cwG*"
+          "Group Tests",
+          "v[CA4i,bsu#JabrQ)Rua"
         ]
       },
       "shadow": false,
       "topLevel": false
     },
-    "aP": {
+    "W": {
+      "opcode": "operator_add",
+      "next": null,
+      "parent": "B",
+      "inputs": {
+        "NUM1": [
+          3,
+          "aG",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aG": {
       "opcode": "data_itemoflist",
       "next": null,
-      "parent": "Q",
+      "parent": "W",
       "inputs": {
         "INDEX": [
           1,
@@ -3000,14 +1656,1048 @@
       "shadow": false,
       "topLevel": false
     },
-    "?": {
+    "b": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "B",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "D"
+        ],
+        "SUBSTACK": [
+          2,
+          "X"
+        ],
+        "SUBSTACK2": [
+          2,
+          "Y"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "D": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "b",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "aH",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          3,
+          "aI",
+          [
+            10,
+            "50"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aH": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "D",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "Test",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aI": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "D",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "Expected",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "X": {
+      "opcode": "data_replaceitemoflist",
+      "next": null,
+      "parent": "b",
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "last"
+          ]
+        ],
+        "ITEM": [
+          3,
+          "Z",
+          [
+            10,
+            "thing"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Group Passed Tests",
+          "z+LQP.Ty{C}r}}Y9i]Q0"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "Z": {
+      "opcode": "operator_add",
+      "next": null,
+      "parent": "X",
+      "inputs": {
+        "NUM1": [
+          3,
+          "aJ",
+          [
+            4,
+            ""
+          ]
+        ],
+        "NUM2": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aJ": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "Z",
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "last"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Group Passed Tests",
+          "z+LQP.Ty{C}r}}Y9i]Q0"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "Y": {
+      "opcode": "data_addtolist",
+      "next": null,
+      "parent": "b",
+      "inputs": {
+        "ITEM": [
+          3,
+          "aK",
+          [
+            10,
+            "thing"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Failed Tests",
+          "74o:HLc@{~!!j~{{cwG*"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aK": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "Y",
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "last"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Group Tests",
+          "v[CA4i,bsu#JabrQ)Rua"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "!": {
+      "opcode": "procedures_definition",
+      "next": "a",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "#"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 1588,
+      "y": 304
+    },
+    "#": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "!",
+      "inputs": {
+        "HxO`kCFKxYf,Adx=7hSQ": [
+          1,
+          "aL"
+        ]
+      },
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Log Group Results Name %s",
+        "argumentids": "[\"HxO`kCFKxYf,Adx=7hSQ\"]",
+        "argumentnames": "[\"Name\"]",
+        "argumentdefaults": "[\"\"]",
+        "warp": "true"
+      }
+    },
+    "aL": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "#",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "Name",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "c": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "a",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "E"
+        ],
+        "SUBSTACK": [
+          2,
+          "%"
+        ],
+        "SUBSTACK2": [
+          2,
+          "F"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "E": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "c",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "aM",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          3,
+          "aN",
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aM": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "E",
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "last"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Group Passed Tests",
+          "z+LQP.Ty{C}r}}Y9i]Q0"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aN": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "E",
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "last"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Group Tests",
+          "v[CA4i,bsu#JabrQ)Rua"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "%": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "c",
+      "inputs": {
+        "AQW?#4(Khe~DUGD=!vlE": [
+          3,
+          "(",
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Log %s",
+        "argumentids": "[\"AQW?#4(Khe~DUGD=!vlE\"]",
+        "warp": "true"
+      }
+    },
+    "(": {
       "opcode": "operator_join",
       "next": null,
-      "parent": "=",
+      "parent": "%",
+      "inputs": {
+        "STRING1": [
+          1,
+          [
+            10,
+            "[PASSED] "
+          ]
+        ],
+        "STRING2": [
+          3,
+          "G",
+          [
+            10,
+            "banana"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "G": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "(",
+      "inputs": {
+        "STRING1": [
+          3,
+          "aO",
+          [
+            10,
+            "apple "
+          ]
+        ],
+        "STRING2": [
+          3,
+          ")",
+          [
+            10,
+            ": "
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aO": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "G",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "Name",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    ")": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "G",
+      "inputs": {
+        "STRING1": [
+          1,
+          [
+            10,
+            ": "
+          ]
+        ],
+        "STRING2": [
+          3,
+          "H",
+          [
+            10,
+            "banana"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "H": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": ")",
+      "inputs": {
+        "STRING1": [
+          3,
+          "aP",
+          [
+            10,
+            "apple "
+          ]
+        ],
+        "STRING2": [
+          3,
+          "*",
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aP": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "H",
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "last"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Group Passed Tests",
+          "z+LQP.Ty{C}r}}Y9i]Q0"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "*": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "H",
+      "inputs": {
+        "STRING1": [
+          1,
+          [
+            10,
+            "/"
+          ]
+        ],
+        "STRING2": [
+          3,
+          "+",
+          [
+            10,
+            "banana"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "+": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "*",
       "inputs": {
         "STRING1": [
           3,
           "aQ",
+          [
+            10,
+            "apple "
+          ]
+        ],
+        "STRING2": [
+          1,
+          [
+            10,
+            " (100%)"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aQ": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "+",
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "last"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Group Tests",
+          "v[CA4i,bsu#JabrQ)Rua"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "F": {
+      "opcode": "procedures_call",
+      "next": ",",
+      "parent": "c",
+      "inputs": {
+        "AQW?#4(Khe~DUGD=!vlE": [
+          3,
+          "-",
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Log %s",
+        "argumentids": "[\"AQW?#4(Khe~DUGD=!vlE\"]",
+        "warp": "true"
+      }
+    },
+    "-": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "F",
+      "inputs": {
+        "STRING1": [
+          1,
+          [
+            10,
+            "[FAILED] "
+          ]
+        ],
+        "STRING2": [
+          3,
+          "I",
+          [
+            10,
+            "banana"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "I": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "-",
+      "inputs": {
+        "STRING1": [
+          3,
+          "aR",
+          [
+            10,
+            "apple "
+          ]
+        ],
+        "STRING2": [
+          3,
+          ".",
+          [
+            10,
+            ": "
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aR": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "I",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "Name",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    ".": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "I",
+      "inputs": {
+        "STRING1": [
+          1,
+          [
+            10,
+            ": "
+          ]
+        ],
+        "STRING2": [
+          3,
+          "J",
+          [
+            10,
+            "banana"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "J": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": ".",
+      "inputs": {
+        "STRING1": [
+          3,
+          "aS",
+          [
+            10,
+            "apple "
+          ]
+        ],
+        "STRING2": [
+          3,
+          "/",
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aS": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "J",
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "last"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Group Passed Tests",
+          "z+LQP.Ty{C}r}}Y9i]Q0"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "/": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "J",
+      "inputs": {
+        "STRING1": [
+          1,
+          [
+            10,
+            "/"
+          ]
+        ],
+        "STRING2": [
+          3,
+          ":",
+          [
+            10,
+            "banana"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    ":": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "/",
+      "inputs": {
+        "STRING1": [
+          3,
+          "aT",
+          [
+            10,
+            "apple "
+          ]
+        ],
+        "STRING2": [
+          1,
+          [
+            10,
+            " (100%)"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aT": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": ":",
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "last"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Group Tests",
+          "v[CA4i,bsu#JabrQ)Rua"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    ",": {
+      "opcode": "data_setvariableto",
+      "next": "K",
+      "parent": "F",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "i",
+          "2RQc9XLi-rcDg!k@r;OR"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "K": {
+      "opcode": "control_repeat",
+      "next": null,
+      "parent": ",",
+      "inputs": {
+        "TIMES": [
+          3,
+          "aU",
+          [
+            6,
+            "10"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          ";"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aU": {
+      "opcode": "data_lengthoflist",
+      "next": null,
+      "parent": "K",
+      "inputs": {},
+      "fields": {
+        "LIST": [
+          "Failed Tests",
+          "74o:HLc@{~!!j~{{cwG*"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    ";": {
+      "opcode": "data_changevariableby",
+      "next": "d",
+      "parent": "K",
+      "inputs": {
+        "VALUE": [
+          1,
+          [
+            4,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "VARIABLE": [
+          "i",
+          "2RQc9XLi-rcDg!k@r;OR"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "d": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": ";",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "="
+        ],
+        "SUBSTACK": [
+          2,
+          "?"
+        ],
+        "SUBSTACK2": [
+          2,
+          "@"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "=": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "d",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          [
+            12,
+            "i",
+            "2RQc9XLi-rcDg!k@r;OR"
+          ],
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          3,
+          "aV",
+          [
+            10,
+            "50"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aV": {
+      "opcode": "data_lengthoflist",
+      "next": null,
+      "parent": "=",
+      "inputs": {},
+      "fields": {
+        "LIST": [
+          "Failed Tests",
+          "74o:HLc@{~!!j~{{cwG*"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "?": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "d",
+      "inputs": {
+        "AQW?#4(Khe~DUGD=!vlE": [
+          3,
+          "[",
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Log %s",
+        "argumentids": "[\"AQW?#4(Khe~DUGD=!vlE\"]",
+        "warp": "true"
+      }
+    },
+    "[": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "?",
+      "inputs": {
+        "STRING1": [
+          1,
+          [
+            10,
+            "\u2517"
+          ]
+        ],
+        "STRING2": [
+          3,
+          "]",
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "]": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "[",
+      "inputs": {
+        "STRING1": [
+          1,
+          [
+            10,
+            " Test "
+          ]
+        ],
+        "STRING2": [
+          3,
+          "^",
+          [
+            10,
+            "banana"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "^": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "]",
+      "inputs": {
+        "STRING1": [
+          3,
+          "aW",
           [
             10,
             "apple "
@@ -3025,10 +2715,10 @@
       "shadow": false,
       "topLevel": false
     },
-    "aQ": {
+    "aW": {
       "opcode": "data_itemoflist",
       "next": null,
-      "parent": "?",
+      "parent": "^",
       "inputs": {
         "INDEX": [
           3,
@@ -3047,6 +2737,736 @@
         "LIST": [
           "Failed Tests",
           "74o:HLc@{~!!j~{{cwG*"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "@": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "d",
+      "inputs": {
+        "AQW?#4(Khe~DUGD=!vlE": [
+          3,
+          "_",
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Log %s",
+        "argumentids": "[\"AQW?#4(Khe~DUGD=!vlE\"]",
+        "warp": "true"
+      }
+    },
+    "_": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "@",
+      "inputs": {
+        "STRING1": [
+          1,
+          [
+            10,
+            "\u2523"
+          ]
+        ],
+        "STRING2": [
+          3,
+          "`",
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "`": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "_",
+      "inputs": {
+        "STRING1": [
+          1,
+          [
+            10,
+            " Test "
+          ]
+        ],
+        "STRING2": [
+          3,
+          "{",
+          [
+            10,
+            "banana"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "{": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "`",
+      "inputs": {
+        "STRING1": [
+          3,
+          "aX",
+          [
+            10,
+            "apple "
+          ]
+        ],
+        "STRING2": [
+          1,
+          [
+            10,
+            " Failed"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "aX": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "{",
+      "inputs": {
+        "INDEX": [
+          3,
+          [
+            12,
+            "i",
+            "2RQc9XLi-rcDg!k@r;OR"
+          ],
+          [
+            7,
+            "1"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Failed Tests",
+          "74o:HLc@{~!!j~{{cwG*"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "|": {
+      "opcode": "data_addtolist",
+      "next": "}",
+      "parent": "a",
+      "inputs": {
+        "ITEM": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Group Tests",
+          "v[CA4i,bsu#JabrQ)Rua"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "}": {
+      "opcode": "data_addtolist",
+      "next": "aY",
+      "parent": "|",
+      "inputs": {
+        "ITEM": [
+          1,
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Group Passed Tests",
+          "z+LQP.Ty{C}r}}Y9i]Q0"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "aY": {
+      "opcode": "data_deletealloflist",
+      "next": null,
+      "parent": "}",
+      "inputs": {},
+      "fields": {
+        "LIST": [
+          "Failed Tests",
+          "74o:HLc@{~!!j~{{cwG*"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "~": {
+      "opcode": "procedures_definition",
+      "next": "L",
+      "parent": null,
+      "inputs": {
+        "custom_block": [
+          1,
+          "aa"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": true,
+      "x": 1588,
+      "y": 64
+    },
+    "aa": {
+      "opcode": "procedures_prototype",
+      "next": null,
+      "parent": "~",
+      "inputs": {
+        "AQW?#4(Khe~DUGD=!vlE": [
+          1,
+          "aZ"
+        ]
+      },
+      "fields": {},
+      "shadow": true,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Log %s",
+        "argumentids": "[\"AQW?#4(Khe~DUGD=!vlE\"]",
+        "argumentnames": "[\"Info\"]",
+        "argumentdefaults": "[\"\",\"\"]",
+        "warp": "true"
+      }
+    },
+    "aZ": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "aa",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "Info",
+          null
+        ]
+      },
+      "shadow": true,
+      "topLevel": false
+    },
+    "L": {
+      "opcode": "procedures_call",
+      "next": "ab",
+      "parent": "~",
+      "inputs": {
+        "arg0": [
+          3,
+          "a!",
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "\u200b\u200blog\u200b\u200b %s",
+        "argumentids": "[\"arg0\"]",
+        "warp": "false"
+      }
+    },
+    "a!": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "L",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "Info",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "ab": {
+      "opcode": "data_addtolist",
+      "next": null,
+      "parent": "L",
+      "inputs": {
+        "ITEM": [
+          3,
+          "a#",
+          [
+            10,
+            "thing"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Output",
+          "Pk,+-Ul?.a.,`I9c-E.u"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "a#": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "ab",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "Info",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "a": {
+      "opcode": "control_if_else",
+      "next": "|",
+      "parent": "!",
+      "inputs": {
+        "SUBSTACK": [
+          2,
+          "c"
+        ],
+        "CONDITION": [
+          2,
+          "ac"
+        ],
+        "SUBSTACK2": [
+          2,
+          "e"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "ac": {
+      "opcode": "operator_gt",
+      "next": null,
+      "parent": "a",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "a%",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          1,
+          [
+            10,
+            "1"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a%": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "ac",
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "last"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Group Tests",
+          "v[CA4i,bsu#JabrQ)Rua"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "e": {
+      "opcode": "control_if_else",
+      "next": null,
+      "parent": "a",
+      "inputs": {
+        "CONDITION": [
+          2,
+          "M"
+        ],
+        "SUBSTACK": [
+          2,
+          "ad"
+        ],
+        "SUBSTACK2": [
+          2,
+          "ae"
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "M": {
+      "opcode": "operator_equals",
+      "next": null,
+      "parent": "e",
+      "inputs": {
+        "OPERAND1": [
+          3,
+          "a(",
+          [
+            10,
+            ""
+          ]
+        ],
+        "OPERAND2": [
+          3,
+          "a)",
+          [
+            10,
+            "0"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a(": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "M",
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "last"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Group Passed Tests",
+          "z+LQP.Ty{C}r}}Y9i]Q0"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "a)": {
+      "opcode": "data_itemoflist",
+      "next": null,
+      "parent": "M",
+      "inputs": {
+        "INDEX": [
+          1,
+          [
+            7,
+            "last"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "Group Tests",
+          "v[CA4i,bsu#JabrQ)Rua"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "ad": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "e",
+      "inputs": {
+        "AQW?#4(Khe~DUGD=!vlE": [
+          3,
+          "af",
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Log %s",
+        "argumentids": "[\"AQW?#4(Khe~DUGD=!vlE\"]",
+        "warp": "true"
+      }
+    },
+    "af": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "ad",
+      "inputs": {
+        "STRING1": [
+          1,
+          [
+            10,
+            "[PASSED] "
+          ]
+        ],
+        "STRING2": [
+          3,
+          "a*",
+          [
+            10,
+            "banana"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a*": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "af",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "Name",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "ae": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "e",
+      "inputs": {
+        "AQW?#4(Khe~DUGD=!vlE": [
+          3,
+          "ag",
+          [
+            10,
+            ""
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Log %s",
+        "argumentids": "[\"AQW?#4(Khe~DUGD=!vlE\"]",
+        "warp": "true"
+      }
+    },
+    "ag": {
+      "opcode": "operator_join",
+      "next": null,
+      "parent": "ae",
+      "inputs": {
+        "STRING1": [
+          1,
+          [
+            10,
+            "[FAILED] "
+          ]
+        ],
+        "STRING2": [
+          3,
+          "a+",
+          [
+            10,
+            "banana"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "a+": {
+      "opcode": "argument_reporter_string_number",
+      "next": null,
+      "parent": "ag",
+      "inputs": {},
+      "fields": {
+        "VALUE": [
+          "Name",
+          null
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "a,": {
+      "opcode": "procedures_call",
+      "next": null,
+      "parent": "N",
+      "inputs": {
+        "HxO`kCFKxYf,Adx=7hSQ": [
+          1,
+          [
+            10,
+            "Max List Items"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Log Group Results Name %s",
+        "argumentids": "[\"HxO`kCFKxYf,Adx=7hSQ\"]",
+        "warp": "true"
+      }
+    },
+    "N": {
+      "opcode": "procedures_call",
+      "next": "a,",
+      "parent": "O",
+      "inputs": {
+        "^+xci+5@.uFUj?f6x|Z-": [
+          3,
+          "a-",
+          [
+            10,
+            ""
+          ]
+        ],
+        "4*P_shMA#~o9AL-TbBSD": [
+          1,
+          [
+            10,
+            "200000"
+          ]
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false,
+      "mutation": {
+        "tagName": "mutation",
+        "children": [],
+        "proccode": "Run Test %s Expected %s",
+        "argumentids": "[\"^+xci+5@.uFUj?f6x|Z-\",\"4*P_shMA#~o9AL-TbBSD\"]",
+        "warp": "true"
+      }
+    },
+    "O": {
+      "opcode": "control_repeat",
+      "next": "N",
+      "parent": "U",
+      "inputs": {
+        "TIMES": [
+          1,
+          [
+            6,
+            "200001"
+          ]
+        ],
+        "SUBSTACK": [
+          2,
+          "a."
+        ]
+      },
+      "fields": {},
+      "shadow": false,
+      "topLevel": false
+    },
+    "U": {
+      "opcode": "data_deletealloflist",
+      "next": "O",
+      "parent": "T",
+      "inputs": {},
+      "fields": {
+        "LIST": [
+          "test list",
+          "8eARG@*nof0,Q.FY0$(3"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "a.": {
+      "opcode": "data_addtolist",
+      "next": null,
+      "parent": "O",
+      "inputs": {
+        "ITEM": [
+          1,
+          [
+            10,
+            "thing"
+          ]
+        ]
+      },
+      "fields": {
+        "LIST": [
+          "test list",
+          "8eARG@*nof0,Q.FY0$(3"
+        ]
+      },
+      "shadow": false,
+      "topLevel": false
+    },
+    "a-": {
+      "opcode": "data_lengthoflist",
+      "next": null,
+      "parent": "N",
+      "inputs": {},
+      "fields": {
+        "LIST": [
+          "test list",
+          "8eARG@*nof0,Q.FY0$(3"
         ]
       },
       "shadow": false,
