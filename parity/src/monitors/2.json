@@ -1,0 +1,18 @@
+{
+  "id": "2RQc9XLi-rcDg!k@r;OR",
+  "mode": "default",
+  "opcode": "data_variable",
+  "params": {
+    "VARIABLE": "i"
+  },
+  "spriteName": null,
+  "value": 0,
+  "width": 0,
+  "height": 0,
+  "x": 122,
+  "y": 55,
+  "visible": false,
+  "sliderMin": 0,
+  "sliderMax": 100,
+  "isDiscrete": true
+}
