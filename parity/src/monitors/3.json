@@ -1,18 +1,15 @@
 {
-  "id": "{;@+493aw;6F%Kz(NG/+",
-  "mode": "default",
-  "opcode": "data_variable",
+  "id": "z+LQP.Ty{C}r}}Y9i]Q0",
+  "mode": "list",
+  "opcode": "data_listcontents",
   "params": {
-    "VARIABLE": "t"
+    "LIST": "Group Passed Tests"
   },
   "spriteName": null,
-  "value": 0,
+  "value": [],
   "width": 0,
   "height": 0,
-  "x": 30,
-  "y": 249,
-  "visible": true,
-  "sliderMin": 0,
-  "sliderMax": 100,
-  "isDiscrete": true
+  "x": 205,
+  "y": 5,
+  "visible": false
 }
